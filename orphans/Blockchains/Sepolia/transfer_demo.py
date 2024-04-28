@@ -20,11 +20,11 @@ SEPOLIA_RPC_LIST = [
 ]
 
 
-def getZkSyncRPC() -> str:
+def getSepoliaRPC() -> str:
     return random.choice(SEPOLIA_RPC_LIST)
 
 
-w3 = Web3(Web3.HTTPProvider(getZkSyncRPC()))
+w3 = Web3(Web3.HTTPProvider(getSepoliaRPC()))
 
 # 检查连接是否成功
 if w3.is_connected():
